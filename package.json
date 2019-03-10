@@ -1,5 +1,5 @@
 {
-	"name": "dictionarray",
+	"name": "@blueworld/dictionarray",
 	"version": "1.0.0",
 	"description": "An indexed array for fast data access",
 	"main": "dist/DictionArray.js",
@@ -9,7 +9,7 @@
 		"test": "nyc mocha --opts mocha.opts test/*.ts",
 		"example": "ts-node ./example/example.ts"
 	},
-	"keywords": ["dictionarray", "array", "index", "index", "list", "datastructure"],
+	"keywords": ["dictionarray", "array", "index", "list", "datastructure"],
 	"author": "blueworld GmbH",
 	"license": "GPL-3.0-or-later",
 	"devDependencies": {
