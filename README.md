@@ -1,5 +1,10 @@
 <h1 align="center">📒 DictionArray</h1>
 <p align="center">An indexed array for fast data access</p>
+<p align="center">
+	<a href="https://badge.fury.io/js/%40blueworld%2Fdictionarray">
+		<img src="https://badge.fury.io/js/%40blueworld%2Fdictionarray.svg" alt="npm version" height="18">
+	</a>
+</p>
 
 ## Installation
 
