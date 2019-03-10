@@ -1,0 +1,6 @@
+tsconfig.json
+src
+example
+node_modules
+.nyc_output
+test

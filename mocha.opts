@@ -1,0 +1,7 @@
+--require chai
+--reporter spec
+--ui bdd
+--colors
+--recursive
+--timeout 20000
+--compilers ts-node/register

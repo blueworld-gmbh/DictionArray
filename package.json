@@ -1,0 +1,40 @@
+{
+	"name": "dictionarray",
+	"version": "1.0.0",
+	"description": "An indexed array for fast data access",
+	"main": "dist/DictionArray.js",
+	"typings": "dist/DictionArray.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "nyc mocha --opts mocha.opts test/*.ts",
+		"example": "ts-node ./example/example.ts"
+	},
+	"keywords": ["dictionarray", "array", "index", "index", "list", "datastructure"],
+	"author": "blueworld GmbH",
+	"license": "GPL-3.0-or-later",
+	"devDependencies": {
+		"@types/chai": "^4.1.7",
+		"@types/mocha": "^5.2.5",
+		"@types/node": "^11.9.4",
+		"chai": "^4.2.0",
+		"mocha": "^3.2.0",
+		"nyc": "^11.7.3",
+		"prettier": "1.10.2",
+		"ts-node": "^8.0.3",
+		"typescript": "^3.3.3"
+	},
+	"prettier": {
+		"printWidth": 100,
+		"useTabs": true,
+		"tabWidth": 4,
+		"arrowParens": "always"
+	},
+	"nyc": {
+		"include": ["src/**/*.ts"],
+		"extension": [".ts"],
+		"require": ["ts-node/register"],
+		"reporter": ["text"],
+		"sourceMap": true,
+		"instrument": true
+	}
+}
