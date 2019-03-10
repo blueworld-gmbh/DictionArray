@@ -57,7 +57,7 @@ d.push({
 });
 ```
 
-**Triggers reindex**: ✅
+* **Triggers reindex**: ✅
 
 ### lookup(index: string, qualifier: string): number[]
 
@@ -69,7 +69,7 @@ const pos: number[] = d.lookup("identifier", "123");
 
 The contant `pos` will now contain the positions of the objects of type `T` with the _identifier_ of value `123` within the dictionarray.
 
-**Triggers reindex**: ❌
+* **Triggers reindex**: ❌
 
 ### get(index: number): T
 
@@ -83,7 +83,7 @@ const obj: Test = d.get(0);
 
 Will return the first object within the _DictionArray_.
 
-**Triggers reindex**: ❌
+* **Triggers reindex**: ❌
 
 ### count(): number
 
@@ -95,7 +95,7 @@ Example:
 const length: number = d.count();
 ```
 
-**Triggers reindex**: ❌
+* **Triggers reindex**: ❌
 
 ### all(): T[]
 
@@ -105,7 +105,7 @@ The retrieve all elements of the _DictionArray_ in array form, use the `all()` f
 const elements: Test[] = d.all();
 ```
 
-**Triggers reindex**: ❌
+* **Triggers reindex**: ❌
 
 ### clear(): void
 
@@ -115,7 +115,7 @@ To remove all elements from the _DictionArray_ use the `clear()` method:
 d.clear();
 ```
 
-**Triggers reindex**: ❌ (well, the index is completely cleared)
+* **Triggers reindex**: ❌ (well, the index is completely cleared)
 
 ### map(callbackFn: (item: T, index: number) => any): any[]
 
@@ -129,7 +129,7 @@ const result = d.map((item) => {
 });
 ```
 
-**Triggers reindex**: ❌
+* **Triggers reindex**: ❌
 
 ### filter(callbackFn: (item: T, index?: number) => boolean): T[]
 
@@ -143,7 +143,7 @@ const result: Test[] = d.filter((item) => {
 });
 ```
 
-**Triggers reindex**: ❌
+* **Triggers reindex**: ❌
 
 ### splice(start: number, deleteCount: number, items?: T[]): T[]
 
@@ -159,4 +159,4 @@ d.splice(0, 1);
 
 This removes the first item from the array.
 
-**Triggers reindex**: ✅
+* **Triggers reindex**: ✅
